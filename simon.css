@@ -8,7 +8,7 @@ body{
     background: #B02222;
     width: 100px;
     height: 100px;
-    box-shadow: 10px -5px 5px #888888;
+    box-shadow: 7px -5px 5px #888888;
     border-radius: 5px;
   }
   
@@ -21,7 +21,7 @@ body{
     background-color: #247A1A;
     width: 100px;
     height: 100px;
-    box-shadow: -10px -5px 5px #888888;
+    box-shadow: -7px -5px 5px #888888;
     border-radius: 5px;
   }
   #green:active { 
@@ -31,7 +31,7 @@ body{
     background: #F5F233;
      width: 100px;
      height: 100px;
-     box-shadow: -10px 5px 5px #888888;
+     box-shadow: -7px 5px 5px #888888;
     border-radius: 5px;
   }
   #yellow:active {
@@ -41,7 +41,7 @@ body{
     background: #1D3794;
     width: 100px;
     height: 100px;
-    box-shadow: 10px 5px 5px #888888;
+    box-shadow: 7px 5px 5px #888888;
     border-radius: 5px;
   }
   #blue:active {
