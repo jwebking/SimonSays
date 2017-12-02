@@ -1,28 +1,46 @@
-<div class='text-center' id="simon">
-  Simon Says</div>
+<!doctype html>
 
-<div class="container text-center">
-  <div id="counters"><span>Number of steps: </span><span id='counter'>0</span></div>
+<html lang="en">
 
-  <div class="buttons">
-    <div>
-      <button id='green' onclick="nextColor(this.id); gSound.play()"></button>
-      <button id='red' onclick="nextColor(this.id); rSound.play()"></button>
+<head>
+  <meta charset="utf-8">
+  <title>SimonSays</title>
+  <meta name="Jamieson" content="SimonSays">
+
+  <link rel="stylesheet" href="simon/simon.css">
+  <script type="text/javascript" src="simon/simon.js"></script>
+
+</head>
+
+<body>
+  <div class='text-center' id="simon">
+    Simon Says</div>
+
+  <div class="container text-center">
+    <div id="counters"><span>Number of steps: </span><span id='counter'>0</span></div>
+
+    <div class="buttons">
+      <div>
+        <button id='green' onclick="nextColor(this.id); gSound.play()"></button>
+        <button id='red' onclick="nextColor(this.id); rSound.play()"></button>
+      </div>
+      <div>
+        <button id='yellow' onclick="nextColor(this.id); ySound.play()"></button>
+        <button id='blue' onclick="nextColor(this.id); bSound.play()"></button>
+      </div>
     </div>
+
+
     <div>
-      <button id='yellow' onclick="nextColor(this.id); ySound.play()"></button>
-      <button id='blue' onclick="nextColor(this.id); bSound.play()"></button>
+
+      <button onclick='nextSequence(); changeStart()' id="startbtn">Start || Reset</button>
+
+      <div class="selectors">
+        <input type="checkbox" id="checker" onClick="onOff()">Strict Mode</input><button class="on" id="on">OFF</button>
+      </div>
+
     </div>
   </div>
+</body>
 
-
-  <div>
-
-    <button onclick='nextSequence(); changeStart()' id="startbtn">Start || Reset</button>
-
-    <div class="selectors">
-      <input type="checkbox" id="checker" onClick="onOff()">Strict Mode</input><button class="on" id="on">OFF</button>
-    </div>
-
-  </div>
-</div>
+</html>
